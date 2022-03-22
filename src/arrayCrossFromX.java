@@ -5,9 +5,10 @@ public class arrayCrossFromX {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = array[i][sign];
-                System.out.println(array[i][j]);
+                array[i][j] = (j == i || j == array.length - 1 - i) ? sign : ' ';
+                System.out.print(array[i][j]);
             }
+            System.out.println();
         }
     }
 }
